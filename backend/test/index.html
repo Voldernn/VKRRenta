@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирование чата</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Тестирование чатов</h1>
+        
+        <div id="connection-status" class="hidden">
+            <span id="status-indicator" class="status-offline"></span>
+            <span id="status-text">Отключен</span>
+        </div>
+        
+        <div id="auth-section">
+            <h2>Авторизация</h2>
+            <select id="user-type">
+                <option value="user">Пользователь</option>
+                <option value="employee">Сотрудник</option>
+            </select>
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Пароль">
+            <button id="login-btn">Войти</button>
+        </div>
+
+        <div id="chat-section" class="hidden">
+            <h2>Чат</h2>
+            <div class="chat-controls">
+                <input type="text" id="chat-name" placeholder="Название чата">
+                <button id="create-chat-btn">Создать чат</button>
+                <input type="text" id="join-chat-id" placeholder="ID чата">
+                <button id="join-chat-btn">Присоединиться</button>
+                <input type="text" id="add-user-id" placeholder="ID пользователя">
+                <button id="add-user-btn">Добавить в чат</button>
+            </div>
+            
+            <div class="chat-container">
+                <div id="chat-list"></div>
+                <div class="chat-content">
+                    <div id="message-container"></div>
+                    <div class="message-input">
+                        <input type="text" id="message-input" placeholder="Сообщение">
+                        <button id="send-btn">Отправить</button>
+                    </div>
+                </div>
+                <div id="participants-section">
+                    <h3>Участники</h3>
+                    <div id="participants-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем socket.io клиент -->
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
