@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../../AuthContext';
 import io from 'socket.io-client';
 
-const API_URL = 'http://localhost:3001';
+const API_URL = 'https://vkrrenta.onrender.com';
 const Chat = () => {
   const { user, logout } = useAuth();
   const [chats, setChats] = useState([]);
@@ -20,7 +20,7 @@ const Chat = () => {
 
   useEffect(() => {
     // Инициализация WebSocket соединения
-    socketRef.current = io(API_URL || 'http://localhost:3001');
+    socketRef.current = io(API_URL || 'https://vkrrenta.onrender.com');
 
     // Загрузка списка чатов
     const fetchChats = async () => {

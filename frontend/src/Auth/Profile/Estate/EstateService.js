@@ -1,5 +1,5 @@
 export const fetchEstates = async (token) => {
-    const response = await fetch('http://localhost:3001/estate/my', {
+    const response = await fetch('https://vkrrenta.onrender.com/estate/my', {
       headers: {
         'Authorization': `Bearer ${token}`,
       },
@@ -10,7 +10,7 @@ export const fetchEstates = async (token) => {
   };
   
   export const updateEstate = async (estateId, formData, token) => {
-    const response = await fetch(`http://localhost:3001/estate/${estateId}`, {
+    const response = await fetch(`https://vkrrenta.onrender.com/estate/${estateId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ export const fetchEstates = async (token) => {
   };
   
   export const addEstate = async (formData, token) => {
-    const response = await fetch('http://localhost:3001/estate', {
+    const response = await fetch('https://vkrrenta.onrender.com/estate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export const fetchEstates = async (token) => {
     return await response.json();
   };
   export const calculateRent = async (estateId, token) => {
-    const response = await fetch(`http://localhost:3001/cost/usercalculate`, {
+    const response = await fetch(`https://vkrrenta.onrender.com/cost/usercalculate`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${token}`,

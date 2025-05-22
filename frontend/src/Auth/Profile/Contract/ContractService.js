@@ -1,6 +1,6 @@
 // ContractService.js
 export const fetchUserContracts = async (token, userId) => {
-    const response = await fetch(`http://localhost:3001/contract/my`, {
+    const response = await fetch(`https://vkrrenta.onrender.com/contract/my`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       },
@@ -11,7 +11,7 @@ export const fetchUserContracts = async (token, userId) => {
   };
   
   export const createContract = async (contractData, token) => {
-    const response = await fetch('http://localhost:3001/contract', {
+    const response = await fetch('https://vkrrenta.onrender.com/contract', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ export const fetchUserContracts = async (token, userId) => {
   };
   
   export const fetchContractDetails = async (contractId, token) => {
-    const response = await fetch(`http://localhost:3001/contract/${contractId}`, {
+    const response = await fetch(`https://vkrrenta.onrender.com/contract/${contractId}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       },

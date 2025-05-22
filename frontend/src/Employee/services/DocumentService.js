@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3001/document';
+const API_URL = 'https://vkrrenta.onrender.com/document';
 
 const fetchWithAuth = async (url, options = {}) => {
   const token = localStorage.getItem('employeeToken');

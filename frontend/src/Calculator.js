@@ -141,7 +141,7 @@ const Calculator = () => {
 
   const calculateRent = async () => {
     try {
-      const response = await fetch("http://localhost:3001/cost/calculate", {
+      const response = await fetch("https://vkrrenta.onrender.com/cost/calculate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

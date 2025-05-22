@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3001/estate';
+const API_URL = 'https://vkrrenta.onrender.com/estate';
 
 const fetchWithAuth = async (url, options = {}) => {
   const token = localStorage.getItem('employeeToken');
@@ -35,5 +35,5 @@ export const updateEstate = async (id, estateData) => {
 };
 
 export const getDistricts = async () => {
-  return fetchWithAuth('http://localhost:3001/districts');
+  return fetchWithAuth('https://vkrrenta.onrender.com/districts');
 };

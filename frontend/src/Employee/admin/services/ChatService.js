@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3001/admin/chats';
+const API_URL = 'https://vkrrenta.onrender.com/admin/chats';
 
 const fetchWithAuth = async (url, options = {}) => {
   const token = localStorage.getItem('employeeToken');

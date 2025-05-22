@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3001/auth'; // Замените на ваш URL API
+const API_URL = 'https://vkrrenta.onrender.com/auth'; // Замените на ваш URL API
 
 export const register = async (userData) => {
   const response = await fetch(`${API_URL}/register`, {

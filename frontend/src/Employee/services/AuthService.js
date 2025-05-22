@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3001/employee';
+const API_URL = 'https://vkrrenta.onrender.com/employee';
 
 
 export const loginEmployee = async (email, password) => {
