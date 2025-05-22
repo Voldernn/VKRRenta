@@ -28,9 +28,7 @@ const io = socketio(server, { // Инициализируем socket.io
 
 app.use(express.json());
 app.use(cors({
-  origin: '*',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  origin: 'https://vkrrentaclient.onrender.com'
 }));
 
 require('./Chats/chatSocket')(io);
