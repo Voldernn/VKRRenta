@@ -126,20 +126,20 @@ const Layout = ({ children }) => {
               <a href="#" className="hover:text-white mx-2">Политика конфиденциальности</a>
               <a href="#" className="hover:text-white mx-2">Пользовательское соглашение</a>
               {isEmployeeLoggedIn ? (
-              <a 
-              href="/employee/dashboard" 
-              className="text-gray-600 hover:text-blue-600"
-              >
-                Панель управления
-              </a>
-            ) : (
-              <a 
-                href="/employee" 
-                className="text-gray-600 hover:text-blue-600"
-              >
-                Вход для сотрудников
-              </a>
-            )}
+                <button 
+                  onClick={() => navigate('/employee/dashboard')}
+                  className="text-gray-600 hover:text-blue-600 mx-2"
+                >
+                  Панель управления
+                </button>
+              ) : (
+                <button 
+                  onClick={() => navigate('/employee')}
+                  className="text-gray-600 hover:text-blue-600 mx-2"
+                >
+                  Вход для сотрудников
+                </button>
+              )}
             </div>
           </div>
         </div>
