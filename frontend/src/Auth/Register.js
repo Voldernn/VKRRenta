@@ -91,7 +91,7 @@ const Register = () => {
         </div>
         <div className="mb-6">
           <label className="block text-gray-700 mb-2" htmlFor="age">
-            Возраст
+            Возраст (65-100 лет)
           </label>
           <input
             type="number"
@@ -100,6 +100,8 @@ const Register = () => {
             className="w-full px-3 py-2 border rounded"
             value={formData.age}
             onChange={handleChange}
+            min="65"
+            max="100"
             required
           />
         </div>

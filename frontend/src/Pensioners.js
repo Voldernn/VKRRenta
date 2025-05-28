@@ -7,8 +7,7 @@ const Pensioners = () => {
       {/* Hero Section */}
       <section className="relative">
         <img 
-          src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" 
-          alt="Happy elderly people" 
+          src="https://placehold.co/2000x2000" 
           className="w-full h-96 object-cover" 
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white">

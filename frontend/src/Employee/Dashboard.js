@@ -119,7 +119,7 @@ const EmployeeDashboard = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <button 
               onClick={() => navigate('/employee/dashboard/admin/employees')}
-              className="bg-green-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
+              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
             >
               Управление сотрудниками
             </button>
