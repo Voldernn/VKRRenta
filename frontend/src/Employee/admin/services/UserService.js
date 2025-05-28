@@ -16,6 +16,10 @@ const fetchWithAuth = async (url, options = {}) => {
     throw new Error(errorData.message || 'Ошибка запроса');
   }
 
+  if (response.status === 204) {
+    return null;
+  }
+
   return response.json();
 };
 

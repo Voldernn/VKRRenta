@@ -13,7 +13,6 @@ const EmployeeLogin = () => {
     try {
       const { token, employee } = await loginEmployee(email, password);
       localStorage.setItem('employeeToken', token);
-      // employee.id теперь будет доступен, так как он приходит из data.employee
       navigate('/employee/dashboard');
     } catch (err) {
       setError(err.message);

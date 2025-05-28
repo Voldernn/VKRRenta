@@ -25,7 +25,7 @@ const EmployeeDashboard = () => {
       } catch (error) {
         setError(error.message);
         localStorage.removeItem('employeeToken');
-        navigate('/employee/login');
+        navigate('/employee/');
       } finally {
         setLoading(false);
       }
