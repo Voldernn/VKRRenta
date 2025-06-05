@@ -28,7 +28,7 @@ export const fetchEstates = async (token) => {
   };
   
   export const addEstate = async (formData, token) => {
-    const response = await fetch('https://vkrrenta.onrender.com/estate', {
+    const response = await fetch('https://vkrrenta-production.up.railway.app/estate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export const fetchEstates = async (token) => {
     return await response.json();
   };
   export const calculateRent = async (estateId, token) => {
-    const response = await fetch(`https://vkrrenta.onrender.com/cost/usercalculate`, {
+    const response = await fetch(`https://vkrrenta-production.up.railway.app/cost/usercalculate`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${token}`,

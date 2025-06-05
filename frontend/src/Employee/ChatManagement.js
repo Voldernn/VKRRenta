@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import io from 'socket.io-client';
 
-const API_URL = 'https://vkrrenta.onrender.com';
+const API_URL = 'https://vkrrenta-production.up.railway.app';
 
 const ChatManagement = () => {
   const [chats, setChats] = useState([]);

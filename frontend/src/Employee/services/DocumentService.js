@@ -1,4 +1,4 @@
-const API_URL = 'https://vkrrenta.onrender.com/document';
+const API_URL = 'https://vkrrenta-production.up.railway.app/document';
 
 const fetchWithAuth = async (url, options = {}) => {
   const token = localStorage.getItem('employeeToken');

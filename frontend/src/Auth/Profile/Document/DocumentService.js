@@ -1,6 +1,6 @@
 // DocumentService.js
 export const fetchUserDocuments = async (token, userId) => {
-    const response = await fetch(`https://vkrrenta.onrender.com/document/user/${userId}`, {
+    const response = await fetch(`https://vkrrenta-production.up.railway.app/document/user/${userId}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       },
@@ -14,7 +14,7 @@ export const fetchUserDocuments = async (token, userId) => {
   };
   
   export const updateDocumentLink = async (documentId, newLink, token) => {
-    const response = await fetch(`https://vkrrenta.onrender.com/document/link/${documentId}`, {
+    const response = await fetch(`https://vkrrenta-production.up.railway.app/document/link/${documentId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
